@@ -9,7 +9,7 @@ Browse to your desired project location and open terminal
 
 run
 
-```ionic start init ionic3-radio```
+```ionic start ionic3-radio```
 
 choose the blank template and the copy this repo into your project directory, make sure you override the existing files
 
