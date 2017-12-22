@@ -11,12 +11,21 @@ run
 
 ```ionic start ionic3-radio blank```
 
-Then copy this repo into your project directory, make sure you override the existing files
+Then clone this repo into your project directory, make sure you override the existing files
 
  
 Add cordova platforms android and browser
 
-```ionic cordova platform add android browser```
+```ionic cordova platform add android```
 
-run
-```npm install```
+```ionic cordova platform add browser```
+
+```ion cordova plugin add cordova-media-plugin```
+
+then run
+```ionic cordova prepare```
+### Well done you just configured the Ionic3 Radio App
+
+serve the app by running
+
+``` npm run ionic:serve ```
