@@ -9,9 +9,9 @@ Browse to your desired project location and open terminal
 
 run
 
-```ionic start ionic3-radio```
+```ionic start ionic3-radio blank```
 
-choose the blank template and the copy this repo into your project directory, make sure you override the existing files
+Then copy this repo into your project directory, make sure you override the existing files
 
  
 Add cordova platforms android and browser
