@@ -20,7 +20,7 @@ Add cordova platforms android and browser
 
 ```ionic cordova platform add browser```
 
-```ion cordova plugin add cordova-media-plugin```
+```ionic cordova plugin add cordova-media-plugin```
 
 then run
 ```ionic cordova prepare```
