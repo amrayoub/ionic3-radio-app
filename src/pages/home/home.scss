@@ -1,34 +1,29 @@
 .col{
-  padding: 2px !important
-}
-
-.card-background-page {
-    // background-color: rgb(14, 47, 66);
-    // background-image: url('../assets/imgs/listen-bg.jpg');
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-      ion-card {
-        position: relative;
-        text-align: center;
-
-        ion-card-content{
-          background-color: #fafafa
+    padding: 2px !important
+  }
+  
+  .card-background-page {
+        ion-card {
+          position: relative;
+          text-align: center;
+  
+          ion-card-content{
+            background-color: #fafafa
+          }
         }
-      }
-    
-      .card-title {
-        text-align: center;
-        color: rgb(14, 47, 66);
-      }
-    
-    }
-
-    @media only screen and (max-width: 382px){
+      
         .card-title {
-            font-size:14px;
-          }
-          .col{
-            padding: 2px .5px !important
-          }
-    }
+          text-align: center;
+          color: rgb(14, 47, 66);
+        }
+      
+      }
+  
+      @media only screen and (max-width: 382px){
+          .card-title {
+              font-size:14px;
+            }
+            .col{
+              padding: 2px .5px !important
+            }
+      }
