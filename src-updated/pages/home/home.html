@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      181.FM - Ionic Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-row>
+    <ng-container *ngFor="let genre of genres | async">
+      <ion-col col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3>
+        <ion-card (tap)="gotoStations(genre)">
+          <img src="assets/imgs/181-thumbnail.png"/>
+          <ion-card-content>
+            <ion-card-title class="card-title">{{genre.getName()}}</ion-card-title>
+            <span>{{genre.stationsCount()}} stations</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-content>

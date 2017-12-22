@@ -1,0 +1,38 @@
+<ion-header [ngStyle]="setStreamMetaImage(streamMeta?.LargeImage)">
+
+  <ion-navbar color="danger" transparent></ion-navbar>
+  <div class="header-content">
+    <h2 class="genre-title">181.FM - {{genre.getName()}}</h2>
+    <ng-container *ngIf="activeStation !== null">
+      <span class="genre-meta">{{activeStation.getName()}}</span>
+    </ng-container>
+    <ng-container *ngIf="streamMeta !== null">
+      <div class="player">
+        <span>Now playing | </span>
+        <span class="meta">{{streamMeta.song}}>
+          <br>{{streamMeta?.Title}}</span>
+      </div>
+    </ng-container>
+  </div>
+  <ion-item-divider fixed color="danger">
+    {{genre.stationsCount()}} Stations
+  </ion-item-divider>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ng-container *ngFor="let station of stations">
+      <ion-item (tap)="setActivteStation(station)">
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/181-thumbnail.png" alt="181.FM">
+        </ion-thumbnail>
+        {{station.getName()}}
+        <ion-icon [color]="isActiveStation(station.getID()) ? 'danger' : 'dark'" [name]="(isStreaming != true) && isActiveStation(station.getID()) ? 'pause' : 'play'"
+          item-end></ion-icon>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+
+</ion-content>

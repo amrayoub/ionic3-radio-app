@@ -1,0 +1,45 @@
+page-station {
+    .header-md::after{
+        height: 0;
+    }
+    ion-header{
+        overflow: hidden;
+        background: #222222 url('../assets/imgs/radio-bg.jpg') top center no-repeat;
+        background-size: cover;
+        min-height: 280px;
+        .item-divider{
+            position: absolute;
+            bottom: 0;
+            z-index: 2
+        }
+    }
+
+    ion-navbar{
+        position: relative;
+        z-index: 1
+    }
+
+    .header-content{
+        position: absolute;
+        width:100%;
+        top: 0;
+        bottom: 0;
+        color: rgba(#ffffff, .95);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(#b61042,.5)
+    }
+
+    .player{
+        margin-top: 16px;
+        .meta{
+            font-style: italic;
+            color: rgba(#fff,0.75);
+            font-size: 12px;
+        }
+    }
+
+}
